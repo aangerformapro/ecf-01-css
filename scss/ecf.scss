@@ -76,6 +76,8 @@ hr {
 .picture.rounded {
     width: 39px;
     height: 39px;
+
+    border: 2px solid #fff;
     border-radius: 50%;
     overflow: hidden;
     margin-right: 16px;
@@ -100,7 +102,7 @@ hr {
 
     &::before {
         content: '▲';
-        margin-bottom: -2px;
+        margin-bottom: -3px;
     }
     &::after {
         content: '▼';
