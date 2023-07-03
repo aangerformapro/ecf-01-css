@@ -1,0 +1,120 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+  background: #0d1a2d;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cyan {
+  color: #1af2f1;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.card-picture {
+  margin: 0 auto;
+  border-radius: 10px;
+  height: 482px;
+  overflow: hidden;
+}
+.card-picture img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.card {
+  padding: 15px 19px;
+  display: flex;
+  flex-direction: column;
+}
+.card h3 {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 29px 0 0 0;
+}
+.card p {
+  margin: 29px 0;
+}
+@media (min-width: 768px) {
+  .card {
+    padding: 29px;
+  }
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+}
+
+hr {
+  margin: 16px 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.picture.rounded {
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 16px;
+}
+.picture.rounded img {
+  width: 100%;
+  height: 100%;
+}
+
+.cours-du-bitcoin {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrows {
+  display: flex;
+  flex-direction: column;
+  margin-right: 8px;
+  font-size: 15px;
+}
+.arrows::before {
+  content: "▲";
+  margin-bottom: -2px;
+}
+.arrows::after {
+  content: "▼";
+  margin-top: -2px;
+}
+
+@media (min-width: 480px) {
+  .card {
+    background: #15273f;
+    box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    max-width: 401px;
+  }
+  .card-picture {
+    max-height: 347px;
+  }
+}
+
+/*# sourceMappingURL=ecf.css.map */

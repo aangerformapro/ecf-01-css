@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "sass": "^1.63.6"
+  },
+  "scripts": {
+    "sass:watch": "sass --embed-sources --load-path=node_modules --watch scss:public/assets"
+  }
+}
